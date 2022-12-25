@@ -18,6 +18,12 @@ img {
   display: block;
   height: auto;
 }
+svg {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
 
 .site-body {
   display: flex;
@@ -28,6 +34,7 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: var(--main-body-color);
 }
 
 /* STICKY-FOOTER */
