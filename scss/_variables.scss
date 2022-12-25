@@ -1,6 +1,13 @@
 /* VARIABLES */
-:root{
-  --light-background: #f2ece4;
-  --light-text: #036;
+:root {
+  --main-body-color: #eeeeee;
+  --main-text-color: #000000;
+  --darkmodbtn-card-bg-color: #f5f5f5;
+  --btn-bg-color: #299764;
 }
-
+.dark {
+  --main-body-color: #1c1c1c;
+  --main-text-color: #ffffff;
+  --darkmodbtn-card-bg-color: #272727;
+  --btn-bg-color: #299764;
+}
