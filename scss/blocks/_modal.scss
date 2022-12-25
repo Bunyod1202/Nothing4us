@@ -1,0 +1,208 @@
+.login {
+    position: fixed;
+    display: none;
+    right: 0;
+    left: 0;
+    top: 208px;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    background-color: var(--main-box-color);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+}
+
+.login-wrapper {
+    position: relative;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    padding: 25px;
+    background-color: var(--darkmodbtn-card-bg-color);
+    border: none;
+    border-radius: 100px;
+    background-image: url("../../images/icons/eye-dark.svg");
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.login-wrapper__title {
+    padding-bottom: 32px;
+}
+
+.login-wrapper__text {
+    margin: 0;
+    @include typography-styles(normal,36px,44px,600,center);
+    color: var(--main-text-color);
+    padding-bottom: 10px;
+}
+
+.login-wrapper__span {
+    margin: 0;
+ @include typography-styles(normal,16px,24px,400,center);
+ color: var(--main-info-color);
+}
+
+
+.form-input {
+    display: block;
+}
+.label-input {
+    margin-bottom: 16px;
+}
+
+
+.input-email {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 30px;
+    background-color: var(--main-box-color);
+    border: 1.5px solid #E5E7EA;
+    border-radius: 82px;
+    outline: none;
+
+}
+
+
+.input-email:not(:placeholder-shown):not(:focus):invalid {
+    border: 1.5px solid red;
+}
+
+.input-email:not(:placeholder-shown):not(:focus):invalid+.wrong{
+    opacity: 1;
+}
+
+.input-email:not(:-moz-placeholder-shown):not(:focus):valid {
+    border: 1.5px solid var(--btn-bg-color);
+  }
+
+.input-password {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 30px;
+    background-color: var(--main-box-color);
+    border: 1.5px solid #E5E7EA;
+    border-radius: 82px;
+    outline: none;
+
+}
+
+.password-input {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.input-password:not(:placeholder-shown):not(:focus):invalid {
+    border: 1.5px solid red;
+}
+
+.input-password:not(:placeholder-shown):not(:focus):invalid + .wrongs{
+    opacity: 1;
+}
+
+.wrong {
+ @include typography-styles(normal,14px,17px,500,left);
+color: var(--wrong-color);
+opacity: 0;
+ 
+}
+
+.wrongs {
+    @include typography-styles(normal,14px,17px,500,left);
+   color: var(--wrong-color);
+   opacity: 0;
+  display: block;
+   
+   
+}
+
+.input-password:not(:-moz-placeholder-shown):not(:focus):valid {
+    border: 1.5px solid var(--btn-bg-color);
+
+  }
+
+
+.forgot {
+    text-align: end;
+ @include typography-styles(normal,14px,17px,500,right);
+ color: var(--main-info-color);
+ text-decoration: none;
+ display: block;
+}
+
+.warning-wrap {
+    margin: 26px 0 32px 0;
+}
+
+.warning {
+  @include typography-styles(normal,16px,20px,500,center);
+  color: var(--main-text-color);
+}
+
+.btn-login-modal {
+    position: relative;
+    width: 100%;
+    max-width: 526px;
+    background-color: var(--btn-bg-color);
+    border: none;
+    border-radius: 100px;
+    @include typography-styles(normal,18px,22px,500,center);
+    color: var(--main-box-color);
+    padding: 18px 0;
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url("../../images/icons/eye-dark.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 22px;
+        height: 22px;
+        
+    }
+}
+
+@include desktop-first(835px) {
+    .login {
+        padding: 50px 16px 16px 16px;
+        top: 200px;
+    }
+
+    .login-wrapper__text {
+        @include typography-styles(normal,24px,29px,600,center);
+        color: var(--main-text-color);
+        padding-bottom: 6px;
+    }
+    
+    .login-wrapper__span {
+        margin: 0;
+     @include typography-styles(normal,12px,15px,400,center);
+     color: var(--main-info-color);
+    }
+
+    .login-wrapper__title {
+        padding-bottom: 40px;
+    }
+
+    .forgot {
+        display: none;
+    }
+}
