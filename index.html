@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Template</title>
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -79,7 +81,32 @@
     </div>
   </header>
   <main class="site-main">
-    <section class="hero"></section>
+    <section class="hero">
+      <div class="container">
+       <div class="hero-inner">
+        <div class="owl-carousel owl-theme">
+          <div class="item item-compact-cars">  <div class="coarousel-content">
+            <h2 class="coarousel-content__title">Compact cars</h2>
+            <p class="coarousel-content__text">Rent cars as you are comfortable and where you are comfortable.</p>
+          </div></div>
+          <div class="item item-sports-cars">  <div class="coarousel-content">
+            <h2 class="coarousel-content__title">Compact cars</h2>
+            <p class="coarousel-content__text">Rent cars as you are comfortable and where you are comfortable.</p>
+          </div></div>
+          <div class="item item-Vans">
+            <div class="coarousel-content">
+              <h2 class="coarousel-content__title">Compact cars</h2>
+              <p class="coarousel-content__text">Rent cars as you are comfortable and where you are comfortable.</p>
+            </div>
+          </div>
+      </div>
+      <form class="hero-form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+        <input class="search-input" name="search" aria-label="Find the car of your dreams" placeholder="Find the car of your dreams" type="search">
+        <button type="submit" class="search-btn"></button>
+      </form>
+       </div>
+      </div>
+    </section>
     <section class="choose">
       <div class="container">
         <div class="choose__content-box">
@@ -608,6 +635,8 @@
   <footer class="site-footer">
 
   </footer>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

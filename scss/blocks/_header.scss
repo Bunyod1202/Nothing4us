@@ -8,7 +8,7 @@
 .header-logo {
   margin: 0;
 }
-.theme--active {
+.body--dark {
   .moon {
     display: none;
 
@@ -216,6 +216,7 @@
       top: 0;
     }
     .menu-inner {
+      z-index: 10;
       max-width: 475px;
       height: auto;
       display: flex;
