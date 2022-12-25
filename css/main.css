@@ -636,7 +636,7 @@ img {
   }
   .service-wrapper__list {
     padding-bottom: 120px;
-    overflow: auto;
+    overflow: hidden;
   }
   .service-wrapper__list::-webkit-scrollbar {
     display: none;

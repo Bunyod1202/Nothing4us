@@ -182,7 +182,8 @@ padding-bottom: 10px;
 
     .service-wrapper__list{
         padding-bottom: 120px;
-        overflow: auto;
+        overflow: hidden;
+
 
        &::-webkit-scrollbar {
         display: none;
