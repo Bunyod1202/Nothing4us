@@ -1,0 +1,170 @@
+.service {
+    padding: 160px 0;
+}
+
+.service-wrapper__title {
+    width: 341px;
+    padding-bottom: 34px;
+}
+
+.service-wrapper__text {
+    margin: 0;
+    padding: 0;
+    @include typography-styles(normal,24px,29px,500,center);
+    color: var(--main-text-color);
+
+}
+
+
+.service-wrapper__list{
+    padding-bottom: 160px;
+    @include list-unstyle;
+  @include flexbox(start,center,row)
+}
+
+.service-wrapper__item:not(:last-child) {
+    margin-right: 66px;
+}
+
+.service-service__title-wrap {
+    width: 640px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service-service__text {
+    margin: 0;
+    padding-bottom: 10px;
+    @include typography-styles(normal,36px,44px,600,center);
+    color: var(--main-text-color);
+}
+
+.service-service__parag {
+    margin: 0;
+    @include typography-styles(normal,16px,24px,400,center);
+    color: var(--main-info-color);
+ 
+}
+
+.service-list {
+    @include list-unstyle;
+    @include flexbox(space-between,start,row);
+    flex-wrap: wrap;
+}
+
+.service-list__item {
+    position: relative;
+    width: 590px;
+    padding: 40px;
+    background-color: var(--darkmodbtn-card-bg-color);
+    border-radius: 20px;
+
+ &:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    
+&:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+
+&:nth-child(2):after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/guaranted-icon.svg");
+    // @include bgRetinaImages(bg);
+    background-size: cover;
+    background-position: center;
+    right: 40px;
+    top: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+&:nth-child(3):after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/user-clock-default.svg");
+    // @include bgRetinaImages(bg);
+    background-size: cover;
+    background-position: center;
+    right: 40px;
+    top: 40px;
+    width: 60px;
+    height: 60px;
+}
+    
+&:nth-child(4):after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/noreservation-icon.svg");
+    // @include bgRetinaImages(bg);
+    background-size: cover;
+    background-position: center;
+    right: 40px;
+    top: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+}
+
+
+
+.service-list__item::after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/book-online-icon.svg");
+    // @include bgRetinaImages(bg);
+    background-size: cover;
+    background-position: center;
+    right: 40px;
+    top: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.service-list__inf {
+    width: 211px;
+    padding-bottom: 10px;
+}
+
+.service-list__book {
+    margin: 0;
+    @include typography-styles(normal,32px,39px,500,left);
+    color: var(--main-text-color);
+
+}
+
+.service-list__in {
+    width: 354px;
+}
+
+.service-list__complet {
+     margin: 0;
+     @include typography-styles(normal,16px,24px,400,left);
+     color: var(--main-info-color);
+ 
+}
+
+.service-list__ing {
+width: 260px;
+padding-bottom: 10px;
+
+}
+
+
+
+.service-list__inu {
+    width: 278px;
+    padding-bottom: 10px;
+}
+
+
+
+.service-list__inb {
+    width: 288px;
+    padding-bottom: 10px;
+}
