@@ -82,6 +82,7 @@
   @include typography-styles(normal, 18px, 22px, 500, center);
 }
 .nav-list__group {
+  z-index: 9;
   display: none;
   @include list-unstyle;
   padding: 10px;
@@ -94,6 +95,7 @@
   border-radius: 20px;
 }
 .nav-list__group-help {
+  z-index: 9;
   display: none;
   @include list-unstyle;
   padding: 10px;
