@@ -526,6 +526,7 @@ img {
   margin-bottom: 20px;
 }
 .service-list__item:nth-child(1):after {
+  content: "";
   position: absolute;
   background-image: url("../images/icons/book-online-icon.svg");
   background-size: cover;
@@ -798,6 +799,23 @@ img {
     text-align: center;
   }
 }
+.body--dark .light-img {
+  display: none;
+}
+.body--dark .dark-img {
+  margin-top: -40px;
+  display: block;
+}
+
+.light-img {
+  display: block;
+}
+
+.dark-img {
+  margin-top: -40px;
+  display: none;
+}
+
 .safe {
   padding-bottom: 160px;
 }

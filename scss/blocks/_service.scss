@@ -71,9 +71,9 @@
 }
 
 &:nth-child(1):after{
+    content: "";
     position: absolute;
     background-image: url("../images/icons/book-online-icon.svg");
-    // @include bgRetinaImages(bg);
     background-size: cover;
     background-position: center;
     right: 40px;
@@ -356,4 +356,20 @@ padding-bottom: 10px;
     .service-service__parag {
         @include typography-styles(normal,12px,15px,400,center);
     }
+}
+.body--dark{
+    .light-img {
+        display: none;
+    }
+    .dark-img {
+        margin-top: -40px;
+        display: block;
+    }
+}
+.light-img {
+    display: block;
+}
+.dark-img {
+    margin-top: -40px;
+    display: none;
 }
