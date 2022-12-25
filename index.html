@@ -6,24 +6,629 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Template</title>
+  <link rel="stylesheet"
+    href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body class="site-body">
-  <!-- // Bunyod ///// -->
-  <header class="site-hider">
 
+  <header class="site-header header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="./index.html">
+          <img class="header-logo" src="./images/icons/logo.svg" alt="Car rental">
+        </a>
+        <div class="menu">
+          <div class="menu-inner">
+            <div class="header__start">
+              <div class="logo-inner">
+                <a href="./index.html">
+                  <img class="header-logo" src="./images/icons/logo.svg" alt="Car rental">
+                </a>
+                <button class="btn-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    fill="none">
+                    <path fill="#000"
+                      d="M14.727 8.245a.687.687 0 1 0-.972-.972L11 10.028 8.245 7.273a.687.687 0 1 0-.972.972L10.028 11l-2.755 2.755a.687.687 0 1 0 .972.972L11 11.972l2.755 2.755a.687.687 0 1 0 .972-.972L11.972 11l2.755-2.755Z" />
+                  </svg></button>
+              </div>
+              <nav>
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Categories </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About Us </a>
+                    <ul class="nav-list__group">
+                      <li class="nav-list__active-item">
+                        <a class="nav-list__link" href="">News</a>
+                      </li>
+                      <li class="nav-list__active-item">
+                        <a class="nav-list__link" href="">Careers</a>
+                      </li>
+                      <li class="nav-list__active-item">
+                        <a class="nav-list__link" href="">Locations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Help center </a>
+                    <ul class="nav-list__group-help">
+                      <li class="nav-list__active-item">
+                        <a class="nav-list__link" href="">FAQ</a>
+                      </li>
+                      <li class="nav-list__active-item">
+                        <a class="nav-list__link" href="">Contact us</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <a class="header-phon-number phone-mobile" href="tel:+18554200000">+1 855 420 0000</a>
+              </nav>
+            </div>
+            <div class="header__end">
+              <a class="header-phon-number phone-desktop" href="tel:+18554200000">+1 855 420 0000</a>
+              <button type="button" class="theme-btn">
+                <svg class="moon" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.0007 3.2085C6.69743 3.2085 3.20898 6.69694 3.20898 11.0002C3.20898 15.3034 6.69743 18.7918 11.0007 18.7918C15.0502 18.7918 18.3777 15.703 18.7564 11.7525C18.7741 11.5687 18.6796 11.3922 18.5168 11.3049C18.3541 11.2176 18.1548 11.2365 18.0114 11.3529C17.2234 11.9923 16.2198 12.3752 15.1257 12.3752C12.5943 12.3752 10.5423 10.3231 10.5423 7.79183C10.5423 6.2884 11.2657 4.95404 12.3854 4.11752C12.5334 4.00692 12.6005 3.81823 12.5556 3.63897C12.5107 3.45972 12.3626 3.32497 12.1799 3.29721C11.795 3.23877 11.4012 3.2085 11.0007 3.2085Z"
+                    fill="black" />
+                </svg>
+                <svg class="sun" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 1.146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM11 5.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM5.004 4.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .973-.972l-.649-.648ZM20.854 11c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM17.968 5.004a.687.687 0 1 0-.972-.972l-.648.648a.687.687 0 0 0 .972.972l.648-.648ZM11 18.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM17.32 16.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM3.437 11c0 .38-.307.687-.687.687h-.917a.688.688 0 0 1 0-1.375h.917c.38 0 .687.308.687.688ZM5.652 17.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z"
+
+                    fill="#fff" /></svg>
+
+                    fill="#fff" />
+                </svg>
+
+              </button>
+              <button type="button" class="login-btn">Login</button>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="none">
+
+            <path stroke="#000" stroke-linecap="round" stroke-width="2" d="M1 1h38M1 11h38M1 21h38" /></svg>
+
+            <path stroke="#000" stroke-linecap="round" stroke-width="2" d="M1 1h38M1 11h38M1 21h38" />
+          </svg>
+
+        </button>
+      </div>
+    </div>
   </header>
-  <!-- // Bunyod ///// -->
   <main class="site-main">
-    <!-- //Bunyod////// -->
-    <section class="hero"></section>
-    <section class="choose"></section>
-    <!-- //Bunyod//////
-    //Abdulvohid////// -->
+    <section class="hero">
+      <h1 class="visually-hidden">Rent car</h1>
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="owl-carousel owl-theme">
+
+          <div class="owl-carousel hero-owl-carousel owl-theme">
+
+            <div class="item item-compact-cars">
+              <div class="coarousel-content">
+                <h2 class="coarousel-content__title">Compact cars</h2>
+                <p class="coarousel-content__text">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+            <div class="item item-sports-cars">
+              <div class="coarousel-content">
+                <h2 class="coarousel-content__title">Compact cars</h2>
+                <p class="coarousel-content__text">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+            <div class="item item-Vans">
+              <div class="coarousel-content">
+                <h2 class="coarousel-content__title">Compact cars</h2>
+                <p class="coarousel-content__text">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+          </div>
+          <form class="hero-form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+            <input class="search-input" name="search" aria-label="Find the car of your dreams"
+              placeholder="Find the car of your dreams" type="search">
+            <button type="submit" class="search-btn"></button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="choose">
+      <div class="container">
+        <div class="choose__content-box">
+          <div class="choose__content">
+            <h2 class="choose__title">Choose the car of your dreams</h2>
+            <p class="choose__text">We provide our customers with the most incredible driving emotions. That is why
+              there are only world-class cars in our fleet</p>
+          </div>
+          <div class="choose__filter">
+            <ul class="choose__filter-list">
+              <li class="choose__filter-item choose__filter-item--active">
+                <a class="choose__filter-link" href="#compact">Compact</a>
+              </li>
+              <li class="choose__filter-item ">
+                <a class="choose__filter-link" href="#sportscars">Sports cars</a>
+              </li>
+              <li class="choose__filter-item ">
+                <a class="choose__filter-link" href="#vans">Vans</a>
+              </li>
+            </ul>
+
+            <div class="choose__panel panel">
+              <ul class="panel__list panel__list--active" id="compact">
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Ford Fiesta</h3>
+                      <p class="panel__item-text">Economy Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/compact-ford.png" width="387" height="220"
+                        srcset="./images/compact-ford.png 1x, ./images/compact-ford@2x.png 2x" alt="ford car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Nissan Versa</h3>
+                      <p class="panel__item-text">Compact Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/compact-nissan-one.png" width="387" height="220"
+                        srcset="./images/compact-nissan-one.png 1x, ./images/compact-nissan-one@2x.png 2x"
+                        alt="nissan car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">FToyota Corolla</h3>
+                      <p class="panel__item-text">Mid-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/compact-toyota.png" width="387" height="220"
+                        srcset="./images/compact-toyota.png 1x, ./images/compact-toyota@2x.png 2x" alt="toyota car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Nissan Rogue</h3>
+                      <p class="panel__item-text">Mid-size SUV</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/compact-nissan-rogue.png" width="387" height="220"
+                        srcset="./images/compact-nissan-rogue.png 1x, ./images/compact-nissan-rogue@2x.png 2x"
+                        alt="nissan car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Chevy Traverse</h3>
+                      <p class="panel__item-text">Full-size SUV </p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/compact-chevy.png" width="387" height="220"
+                        srcset="./images/compact-chevy.png 1x, ./images/compact-chevy@2x.png 2x" alt="chevy car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Nissan Altima</h3>
+                      <p class="panel__item-text">Full-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/compact-nissan-altima.png" width="387" height="220"
+                        srcset="./images/compact-nissan-altima.png 1x, ./images/compact-nissan-altima@2x.png 2x"
+                        alt="nissan car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="panel__list" id="sportscars">
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">FRoyce rolls ghost</h3>
+                      <p class="panel__item-text">Full-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/sports-rolls.png" width="387" height="220"
+                        srcset="./images/sports-rolls.png 1x, ./images/sports-rolls@2x.png 2x" alt="FRoyce rolls car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Mercedes s class</h3>
+                      <p class="panel__item-text">Full-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/sports-mercedes-class.png" width="387" height="220"
+                        srcset="./images/sports-mercedes-class.png 1x, ./images/sports-mercedes-class@2x.png 2x"
+                        alt="mersedez car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Lamborghini urus</h3>
+                      <p class="panel__item-text">Mid-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/sports-lamborgini.png" width="387" height="220"
+                        srcset="./images/sports-lamborgini.png 1x, ./images/sports-lamborgini@2x.png 2x"
+                        alt="Lamborghini car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Mercedes g63 amg</h3>
+                      <p class="panel__item-text">Mid-size SUV</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/sports-mercedesg63.png" width="387" height="220"
+                        srcset="./images/sports-mercedesg63.png 1x, ./images/sports-mercedesg63@2x.png 2x"
+                        alt="Mercedes g63 amg car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+              <ul class="panel__list" id="vans">
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">15-Passenger Ford Transit </h3>
+                      <p class="panel__item-text">Full-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/vans-pessenger-one.png" width="387" height="220"
+                        srcset="./images/vans-pessenger-one.png 1x, ./images/vans-pessenger-one@2x.png 2x"
+                        alt="15-Passenger Ford Transit">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Chrysler Pacifica</h3>
+                      <p class="panel__item-text">Full-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/vans-chrusler.png" width="387" height="220"
+                        srcset="./images/vans-chrusler.png 1x, ./images/vans-chrusler@2x.png 2x"
+                        alt="Chrysler Pacifica car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Chevy Silverado 4500HD</h3>
+                      <p class="panel__item-text">Mid-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/vans-chevy.png" width="387" height="220"
+                        srcset="./images/vans-chevy.png 1x, ./images/vans-chevy@2x.png 2x"
+                        alt="Chevy Silverado 4500HD car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">12-Passenger Ford Transit</h3>
+                      <p class="panel__item-text">Mid-size SUV</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/vans-pessenger-12.png" width="387" height="220"
+                        srcset="./images/vans-pessenger-12.png 1x, ./images/vans-pessenger-12@2x.png 2x"
+                        alt="12-Passenger Ford Transit car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">15-Passenger Ford Transit </h3>
+                      <p class="panel__item-text">Full-size SUV </p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/vans-pessenger-15.png" width="387" height="220"
+                        srcset="./images/vans-pessenger-15.png 1x, ./images/vans-pessenger-15@2x.png 2x"
+                        alt="15-Passenger Ford Transit  car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel__item">
+                  <div class="panel__item-box">
+                    <div class="panel__item-content">
+                      <h3 class="panel__item-title">Mercedes-Benz Sprinter</h3>
+                      <p class="panel__item-text">Full-size Car</p>
+                    </div>
+                    <div>
+                      <img class="panel__item-img" src="./images/vans-mercedes-sprinter.png" width="387" height="220"
+                        srcset="./images/vans-mercedes-sprinter.png 1x, ./images/vans-mercedes-sprinter@2x.png 2x"
+                        alt="Mercedes-Benz Sprinter car">
+                    </div>
+                    <div class="panel__item-infos">
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--seats">5 Seats</p>
+                        <p class="panel__info-item panel__info-item--years">21+ Years</p>
+                      </div>
+                      <div class="panel__info-list">
+                        <p class="panel__info-item panel__info-item--automatic">Automatic</p>
+                        <p class="panel__info-item panel__info-item--petrol">1-lit / 2.5 km</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="panel__btn" type="button"> View all cars</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="community"></section>
-   
+
+    <section class="community">
+      <div class="container">
+        <div class="community-inner">
+          <div class="community-content">
+            <a class="community-content__link" href="https://www.google.ru" target="blank" >From Google</a>
+            <h2 class="community-content__title">Hear what the community is saying</h2>
+            <span class="border-colors"></span>
+            <p class="community-content-text">More interesting reviews on Instagram</p>
+            <button class="btn-instagram" type="button">Instagram</button> 
+          </div>
+          <div class="community-crousel">
+            <div class="owl-carousel community-owl-carousel owl-theme">
+              <div class="items community-item">
+                <div class="community-item-content">
+                  <div class="user">
+                    <img class="user-img" src="./images/savannax.jpg" height="42" width="42" srcset="././images/savannax.jpg 1x,./images/savannax@2x.jpg 2x" alt="">
+                    <div class="user-content">
+                      <p class="user-nsme">Savannah Nguyen</p>
+                      <p class="user-email">savannahnguyen@gmail.com</p>
+                    </div> 
+                  </div>
+                  <a href="/" class="goofle">
+                    <img width="21px" height="21px"  src="./images/icons/google-icon.svg" alt="google-icon">
+                  </a>
+                </div>
+                <p class="contents">
+                  Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate massa.
+                </p> 
+                <div class="rating">
+                  <p class="rating-title" >Star rating:</p>
+                  <img class="rating-img"  src="./images/rating.png" height="20" width="124" alt="">
+                </div>
+              </div>
+              <div class="items community-item">
+                <div class="community-item-content">
+                  <div class="user">
+                    <img class="user-img" src="./images/ronald.jpg" height="42" width="42" srcset="././images/ronald.jpg 1x,./images/ronald@2x.jpg 2x" alt="">
+                    <div class="user-content">
+                      <p class="user-nsme">Ronald Richards</p>
+                      <p class="user-email">ronaldrichards@gmail.com</p>
+                    </div> 
+                  </div>
+                  <a href="/" class="goofle">
+                    <img width="21px" height="21px"  src="./images/icons/google-icon.svg" alt="google-icon">
+                  </a>
+                </div>
+                <p class="contents">
+                  Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate massa.
+                </p> 
+                <div class="rating">
+                  <p class="rating-title" >Star rating:</p>
+                  <img class="rating-img"  src="./images/rating.png" height="20" width="124" alt="">
+                </div>
+              </div>
+              <div class="items community-item">
+                <div class="community-item-content">
+                  <div class="user">
+                    <img class="user-img" src="./images/kristian.jpg" height="42" width="42" srcset="././images/kristian.jpg 1x,./images/kristian@2x.jpg 2x" alt="">
+                    <div class="user-content">
+                      <p class="user-nsme">Kristin Watson</p>
+                      <p class="user-email">kristinwatson@gmail.com</p>
+                    </div> 
+                  </div>
+                  <a href="/" class="goofle">
+                    <img width="21px" height="21px"  src="./images/icons/google-icon.svg" alt="google-icon">
+                  </a>
+                </div>
+                <p class="contents">
+                  Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate massa.
+                </p> 
+                <div class="rating">
+                  <p class="rating-title" >Star rating:</p>
+                  <img class="rating-img"  src="./images/rating.png" height="20" width="124" alt="">
+                </div>
+              </div>
+              
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands"></section>
+
     <section class="service">
+
 		<div class="container">
 			<div class="service-wrapper">
 				<div class="service-wrapper__title">
@@ -179,10 +784,260 @@
 		</div>
 	</section>  
 
+      <div class="container">
+        <div class="service-wrapper">
+          <div class="service-wrapper__title">
+            <p class="service-wrapper__text">More than 50 service of cars</p>
+          </div>
+          <ul class="service-wrapper__list">
+            <li class="service-wrapper__item">
+              <img src="./images/ford-light.png" width="140" height="140"
+                srcset="./images/ford-light.png 1x, ./images/ford-light@2x.png 2x" alt="ford-light">
+            </li>
+            <li class="service-wrapper__item">
+              <img src="./images/nissan-light.png" width="140" height="140"
+                srcset="./images/nissan-light.png 1x, ./images/nissan-light@2x.png 2x" alt="nissan-light">
+            </li>
+            <li class="service-wrapper__item">
+              <img src="./images/toyota-light.png" width="140" height="140"
+                srcset="./images/toyota-light.png 1x, ./images/toyota-light@2x.png 2x" alt="toyota-light">
+            </li>
+            <li class="service-wrapper__item">
+              <img src="./images/dodge-light.png" width="140" height="140"
+                srcset="./images/dodge-light.png 1x, ./images/dodge-light@2x.png 2x" alt="dodge-light">
+            </li>
+            <li class="service-wrapper__item">
+              <img src="./images/hyundai-light.png" width="140" height="140"
+                srcset="./images/hyundai-light.png 1x, ./images/hyundai-light@2x.png 2x" alt="hyundai-light">
+            </li>
+            <li class="service-wrapper__item">
+              <img src="./images/jeep.png" width="140" height="140"
+                srcset="./images/jeep.png 1x, ./images/jeep@2x.png 2x" alt="jeep-light">
+            </li>
+          </ul>
+          <div class="service-service">
+            <div class="service-service__title-wrap">
+              <h2 class="service-service__text">Unparalleled service</h2>
+              <p class="service-service__parag">Whether you are looking for Newark Airport car rental, an insurance
+                replacement vehicle
+                or minivan to take on vacation Car rental has it all.</p>
+            </div>
+          </div>
+          <ul class="service-list">
+            <li class="service-list__item">
+              <div class="service-list__inf">
+                <h3 class="service-list__book">Book online, pay online</h3>
+              </div>
+              <div class="service-list__in">
+                <p class="service-list__complet">Complete the booking process A-Z, with our easy online system</p>
+              </div>
+            </li>
+            <li class="service-list__item">
+              <div class="service-list__ing">
+                <h3 class="service-list__book">Guaranteed car reservation</h3>
+              </div>
+              <div class="service-list__in">
+                <p class="service-list__complet">When you book with Car rental, you can be confident your car will be
+                  waiting for you</p>
+              </div>
+            </li>
+            <li class="service-list__item">
+              <div class="service-list__inu">
+                <h3 class="service-list__book">Unparalleled customer service</h3>
+              </div>
+              <div class="service-list__in">
+                <p class="service-list__complet">We're here to help. We pride ourselves in our customer service</p>
+              </div>
+            </li>
+            <li class="service-list__item">
+              <div class="service-list__inb">
+                <h3 class="service-list__book">No reservation or booking fees</h3>
+              </div>
+              <div class="service-list__in">
+                <p class="service-list__complet">No cancellation fees if cancelled 24 hours prior to booking time</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="safe">
+      <div class="container">
+        <div class="safe-wrapper">
+          <div class="safe-wrapper__inner">
+            <div class="safe-wrapper__rental">
+              <h2 class="safe-wrapper__title">Car rental keeps you safe</h2>
+              <p class="safe-wrapper__text">The safety of our employees and renters is our number one priority. In
+                addition to being confident your vehicle is
+                cleaned and sanitized every time you rent, you can also feel confident that we will take every
+                opportunity to enhance the health and
+                safety measures currently practiced in our operations.</p>
+            </div>
+            <ul class="safe-wrapper__list">
+              <li class="safe-wrapper__item">
+                <div class="safe-wrapper__every">
+                  <p class="safe-wrapper__text-every">Every car is thoroughly sanitized and cleaned</p>
+                </div>
+              </li>
+              <li class="safe-wrapper__item">
+                <div class="safe-wrapper__every">
+                  <p class="safe-wrapper__text-every">All of our employees wear masks</p>
+                </div>
+              </li>
+              <li class="safe-wrapper__item">
+                <div class="safe-wrapper__every">
+                  <p class="safe-wrapper__text-every">We stay up to date with all protocol from the CDC</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
-
+    <div class="container">
+      <div class="site-footer__wrap">
+        <div class="site-footer__content-top">
+          <div class="site-footer__info-box">
+            <a class="site-footer__logo" href="/index.html">
+              <img class="site-footer__logo-img" src="./images/icons/logo.svg" width="150" height="40" alt="site logo">
+            </a>
+            <p class="site-footer__desc">Car rental offers a wide range of cars available for rent in Newark EWR Airport
+              NJ. We pride ourselves in our customer service, and hassle-free renting experience.</p>
+          </div>
+          <div class="site-footer__terms-box">
+            <p class="site-footer__terms">© 2022 Car rental Terms & Conditions</p>
+          </div>
+        </div>
+        <div class="site-footer__main-links">
+          <div class="site-footer__faqs">
+            <div class="site-footer__faqs-box">
+              <p class="site-footer__faqs-about">Main</p>
+              <ul class="site-footer__faqs-list">
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">My Bookings</a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">Reservation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="site-footer__faqs-box">
+              <p class="site-footer__faqs-about">Categories</p>
+              <ul class="site-footer__faqs-list">
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">Compact</a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">Sports cars</a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">Vans </a>
+                </li>
+              </ul>
+            </div>
+            <div class="site-footer__faqs-box">
+              <p class="site-footer__faqs-about">Company</p>
+              <ul class="site-footer__faqs-list">
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">About us</a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">Careers</a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">News </a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">Contact us </a>
+                </li>
+              </ul>
+            </div>
+            <div class="site-footer__faqs-box">
+              <p class="site-footer__faqs-about">Our Locations</p>
+              <ul class="site-footer__faqs-list">
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">
+                    <address class="site-footer__faqs-adress">2118 Thornridge Cir. Syracuse</address>
+                  </a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">
+                    <address class="site-footer__faqs-adress">4140 Parker Rd. Allentown</address>
+                  </a>
+                </li>
+                <li class="site-footer__faqs-item">
+                  <a class="site-footer__faqs-link" href="#">
+                    <address>4517 Washington Ave.</address>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-footer__contacts">
+            <div class="site-footer__contact-box">
+              <p class="site-footer__faqs-about">Contact</p>
+              <div class="site-footer__link-wrap">
+                <a class="site-footer__faqs-link site-footer__faqs-link--act" href="tel:18554200000">+1 855 420 0000</a>
+                <a class="site-footer__faqs-link " href="mailto:carrental@gmail.com">carrental@gmail.com</a>
+              </div>
+            </div>
+            <div class="site-footer__contact-box site-footer__contact-box--hours">
+              <p class="site-footer__faqs-about site-footer__faqs-about--hour">Hours of operation</p>
+              <div class="site-footer__time-box">
+                <time class="site-footer__time" datetime="2022-12-12">8:00 - 21:00 Mon-Sat </time>
+                <time class="site-footer__time" datetime="2022-12-12">9:00 - 15:00 Sundays </time>
+              </div>
+            </div>
+            <div class="site-footer__socials">
+              <p class="site-footer__faqs-about site-footer__faqs-about--social">Social network</p>
+              <ul class="site-footer__socials-list">
+                <li class="site-footer__socials-item">
+                  <a class="site-footer__socials-link" href="https://www.instagram.com/luxcarrental.uz/" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                      <path fill="currentColor"
+                        d="M10 1.807h4.096c.964 0 1.446.241 1.808.362.482.24.843.361 1.204.723.362.361.603.722.723 1.204.12.362.241.844.362 1.808v8.192c0 .964-.241 1.446-.362 1.808-.24.482-.361.843-.723 1.204-.361.362-.723.603-1.204.723-.362.12-.844.241-1.808.362H5.904c-.964 0-1.446-.241-1.808-.362-.482-.24-.843-.361-1.204-.723-.362-.361-.603-.723-.723-1.204-.12-.362-.241-.844-.362-1.808V5.904c0-.964.241-1.446.362-1.808.24-.482.361-.843.723-1.204.361-.362.722-.603 1.204-.723.362-.12.844-.241 1.808-.362H10ZM10 0H5.904c-1.085 0-1.808.241-2.41.482a5.26 5.26 0 0 0-1.807 1.205C1.084 2.289.843 2.77.482 3.494.24 4.096.12 4.819 0 5.904v8.192c0 1.085.241 1.808.482 2.41a5.262 5.262 0 0 0 1.205 1.807c.602.603 1.084.844 1.807 1.205.602.241 1.325.361 2.41.482h8.192c1.085 0 1.808-.241 2.41-.482a5.263 5.263 0 0 0 1.807-1.205c.603-.602.844-1.084 1.205-1.807.241-.602.361-1.325.482-2.41V5.904c0-1.085-.241-1.808-.482-2.41a5.261 5.261 0 0 0-1.205-1.807c-.602-.603-1.084-.844-1.807-1.205C15.904.24 15.181.12 14.096 0H10Z" />
+                      <path fill="currentColor"
+                        d="M10 4.82A5.142 5.142 0 0 0 4.82 10c0 2.892 2.288 5.18 5.18 5.18s5.18-2.288 5.18-5.18S12.893 4.82 10 4.82Zm0 8.553A3.368 3.368 0 0 1 6.627 10 3.368 3.368 0 0 1 10 6.627 3.368 3.368 0 0 1 13.373 10c0 1.807-1.566 3.373-3.373 3.373Zm5.301-7.469a1.205 1.205 0 1 0 0-2.41 1.205 1.205 0 0 0 0 2.41Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="site-footer__socials-item">
+                  <a class="site-footer__socials-link" href="https://www.instagram.com/luxcarrental.uz/" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor">
+                      <path fill="currentColor"
+                        d="M19.6 1.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.2-.8.5-1.6.8-2.6 1C15.8.5 14.7 0 13.6 0c-2.2 0-4 1.8-4 4 0 .3 0 .6.1.9C6.4 4.7 3.4 3.1 1.4.7c-.3.6-.5 1.3-.5 2 0 1.4.7 2.6 1.8 3.3C2 6 1.4 5.8.9 5.5c0 1.9 1.4 3.6 3.2 3.9-.3.1-.7.1-1.1.1-.3 0-.5 0-.8-.1.5 1.6 2 2.8 3.8 2.8-1.4 1.1-3.1 1.7-5 1.7-.3 0-.6 0-1-.1 1.8 1.1 3.9 1.8 6.2 1.8 7.4 0 11.4-6.1 11.4-11.4v-.5c.8-.3 1.5-1 2-1.8Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="site-footer__socials-item">
+                  <a class="site-footer__socials-link" href="https://www.instagram.com/luxcarrental.uz/" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="23" fill="currentColor">
+                      <path fill="currentColor"
+                        d="M7.657 12.365h3.722l.585-3.804H7.656V6.48c0-1.58.514-2.981 1.983-2.981H12V.18C11.585.123 10.708 0 9.05 0 5.588 0 3.559 1.84 3.559 6.03v2.53H0v3.805h3.559V22.82A14.33 14.33 0 0 0 5.71 23c.662 0 1.309-.06 1.947-.148V12.365Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="site-footer__socials-item">
+                  <a class="site-footer__socials-link" href="https://www.instagram.com/luxcarrental.uz/" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor">
+                      <path fill="currentColor"
+                        d="M17.927 3.063A10.428 10.428 0 0 0 10.537 0C4.757 0 .073 4.667.073 10.427c0 1.823.512 3.646 1.39 5.177L0 21l5.561-1.458c1.537.802 3.22 1.24 4.976 1.24 5.78 0 10.463-4.667 10.463-10.428-.073-2.698-1.098-5.323-3.073-7.291Zm-2.342 11.083c-.22.583-1.244 1.166-1.756 1.24a4.104 4.104 0 0 1-1.61-.073c-.365-.146-.877-.292-1.463-.584-2.634-1.094-4.317-3.719-4.463-3.937-.147-.146-1.098-1.386-1.098-2.698 0-1.313.659-1.896.878-2.188.22-.291.512-.291.732-.291h.512c.146 0 .366-.073.585.437.22.51.732 1.823.805 1.896a.463.463 0 0 1 0 .437 1.525 1.525 0 0 1-.292.438c-.147.146-.293.364-.366.437-.147.146-.293.292-.147.51.147.293.659 1.095 1.464 1.824 1.024.875 1.83 1.166 2.122 1.312.293.146.439.073.585-.073.146-.146.659-.729.805-1.02.146-.292.366-.22.585-.146.22.073 1.537.729 1.757.875.292.146.438.218.512.291.073.22.073.73-.147 1.313Z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
 
   <div class="login">
 	<div class="login-wrapper">
@@ -213,6 +1068,10 @@
 		</form>
 	</div>
   </div>
+
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
   <script src="./js/main.js"></script>
 </body>
 

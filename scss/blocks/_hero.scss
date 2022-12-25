@@ -1,0 +1,121 @@
+.hero {
+  padding-top: 20px;
+}
+.hero-inner {
+  position: relative;
+}
+.item {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background-size: cover;
+  background-position: center;
+}
+.item-compact-cars {
+  background-image: url("../../images/carusel-image-one.jpg");
+  @include bgRetinaImages {
+    background-image: url("../../images/carusel-image-one@2x.jpg");
+  }
+}
+.item-sports-cars {
+  background-image: url("../../images/carusel-image-two.jpg");
+  @include bgRetinaImages {
+    background-image: url("../../images/carusel-image-two@2x.jpg");
+  }
+}
+.item-Vans {
+  background-image: url("../../images/carusel-image-there.jpg");
+  @include bgRetinaImages {
+    background-image: url("../../images/carusel-image-there@2x.jpg");
+  }
+}
+.coarousel-content {
+  max-width: 416px;
+}
+.coarousel-content__title {
+  @include typography-styles(normal, 36px, 44px, 600, center);
+  margin: 0;
+  color: var(--main-box-color);
+}
+.coarousel-content__text {
+  @include typography-styles(normal, 16px, 20px, 400, center);
+  color: var(--main-box-color);
+}
+.owl-nav {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.owl-prev,
+.owl-next {
+  opacity: 1 !important;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff !important;
+  border-radius: 50% !important;
+  background-image: url("../../images/icons/caret-down-dark.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  transform: rotate(90deg);
+  span {
+    opacity: 0;
+  }
+  cursor: pointer;
+}
+.owl-next {
+  transform: rotate(-90deg);
+}
+.owl-dots {
+  position: absolute;
+  left: 40px;
+  bottom: 54px;
+  .active {
+    span {
+      width: 30px !important;
+      background-color: #ffffff !important;
+      border-radius: 100px;
+    }
+  }
+}
+.hero-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+  z-index: 9;
+  display: flex;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+}
+.search-input {
+  border: none;
+  width: 100%;
+  padding: 22px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  &::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+  }
+}
+.search-btn {
+  border: none;
+  position: absolute;
+  right: 14px;
+  top: 4px;
+  width: 54px;
+  height: 54px;
+  background-color: var(--btn-bg-color);
+  border-radius: 50%;
+  background-image: url("../../images/icons/search-dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

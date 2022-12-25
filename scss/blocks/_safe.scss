@@ -3,8 +3,13 @@
 }
 
 .safe-wrapper {
+
     background-color: var(--main-box-color);
   background-image: url("../images/car-rental.png");
+
+    background-color: transparent;
+  background-image: url("../../images/car-rental.png");
+
   background-position: calc(50% + 350px) calc(20% + 10px);
   background-size: 400px, 452px;
   background-repeat: no-repeat;
@@ -15,7 +20,6 @@
     padding: 40px 32px 32px 32px;
     border: 1.5px solid #E5E7EA;
     border-radius: 20px;
-  
 }
 
 .safe-wrapper__rental {

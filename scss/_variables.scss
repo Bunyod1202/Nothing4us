@@ -1,18 +1,26 @@
 /* VARIABLES */
 :root {
-  --main-body-color: #eeeeee;
-  --main-text-color: #000000;
-  --main-info-color:#555;
-  --darkmodbtn-card-bg-color: #f5f5f5;
-  --btn-bg-color: #299764;
-  --main-box-color: #ffffff;
-  --border-color:#E5E7EA;
-  --wrong-color:#FF3B30;
+
+    --main-body-color: #ffffff;
+    --main-box-color: #ffffff;
+    --main-text-color: #000000;
+    --main-info-color: #555555;
+    --darkmodbtn-card-bg-color: #f5f5f5;
+    --border-color: #E5E7EA;
+    --btn-bg-color: #299764;
+    --btn-bgdef-color: #077743;
+    --border-color: #E5E7EA;
+
 }
 
-.dark {
-  --main-body-color: #1c1c1c;
-  --main-text-color: #ffffff;
-  --darkmodbtn-card-bg-color: #272727;
-  --btn-bg-color: #299764;
+.body--dark {
+    --main-body-color: #1c1c1c;
+    --main-text-color: #ffffff;
+    --darkmodbtn-card-bg-color: #272727;
+    --btn-bg-color: #299764;
+    --border-color: #E5E7EA;
+    --main-info-color: #fff;
+    --main-box-color: #000;
+
+
 }
