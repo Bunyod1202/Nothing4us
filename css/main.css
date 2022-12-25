@@ -17,6 +17,20 @@
   --darkmodbtn-card-bg-color: #272727;
   --btn-bg-color: #299764;
   --border-color:#E5E7EA;
+  --main-info-color: #fff;
+  --main-box-color: #000;
+}
+.body--dark .panel__info-item--seats::before {
+  background-image: url("../../images/icons/seats-light.svg");
+}
+.body--dark .panel__info-item--years::before {
+  background-image: url("../../images/icons/years-light.svg");
+}
+.body--dark .panel__info-item--automatic::before {
+  background-image: url("../../images/icons/automatic-light.svg");
+}
+.body--dark .panel__info-item--petrol::before {
+  background-image: url("../../images/icons/petrol-light.svg");
 }
 
 /* MIXINS */ /**
@@ -423,6 +437,7 @@ button {
 
 /* CONTAINER */
 .container {
+  width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
@@ -1293,7 +1308,14 @@ button {
   background-color: var(--btn-bg-color);
   border-radius: 100px;
   border: transparent;
-  color: var(--main-box-color);
+  color: #fff;
+}
+.panel__btn:hover {
+  background-color: #077743;
+}
+.panel__btn:active {
+  color: #000;
+  background-color: #F5F5F5;
 }
 
 .panel__info-item--seats::before {
@@ -1384,7 +1406,8 @@ button {
 }
 @media only screen and (max-width: 650px) {
   .panel__item {
-    width: 358px;
+    width: 100%;
+    max-width: 358px;
     margin-right: 0;
   }
   .panel__item-img {
@@ -1392,7 +1415,7 @@ button {
     max-width: 358px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
   .choose__filter-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1634,7 +1657,7 @@ button {
 }
 
 .safe-wrapper {
-  background-color: var(--main-box-color);
+  background-color: transparent;
   background-image: url("../../images/car-rental.png");
   background-position: calc(50% + 350px) calc(20% + 10px);
   background-size: 400px, 452px;
@@ -1691,161 +1714,88 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 18px 30px;
-  margin: 0 auto;
-  margin-top: 40px;
-  background-color: var(--btn-bg-color);
-  border-radius: 100px;
-  border: transparent;
-  color: var(--main-box-color);
 }
-.panel__btn:hover {
-  background-color: #077743;
+
+.safe-wrapper__item {
+  position: relative;
+  width: 200px;
+  height: 160px;
+  margin: 0;
+  padding: 79px 15px 15px 15px;
+  background-color: var(--darkmodbtn-card-bg-color);
+  border-radius: 16px;
 }
-.panel__btn:active {
+.safe-wrapper__item:nth-child(1)::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url("../../images/icons/cleaned-light.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+}
+.safe-wrapper__item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.safe-wrapper__item:nth-child(2)::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url("../../images/icons/heart-default.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+}
+.safe-wrapper__item:nth-child(3)::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url("../../images/icons/cdc-lock.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+}
+.safe-wrapper__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.safe-wrapper__every {
+  width: 170px;
+  margin: 0;
+}
+
+.safe-wrapper__text-every {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: left;
   color: var(--main-text-color);
-  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
 }
 
-.panel__info-item--seats::before {
-  background-image: url("../../images/icons/seats-dark.svg");
-}
-
-.panel__info-item--years::before {
-  background-image: url("../../images/icons/years-dark.svg");
-}
-
-.panel__info-item--automatic::before {
-  background-image: url("../../images/icons/automatic-dark.svg");
-}
-
-.panel__info-item--petrol::before {
-  background-image: url("../../images/icons/petrol-dark.svg");
-}
-
-@media only screen and (max-width: 1215px) {
-  .choose {
-    padding-bottom: 120px;
-  }
-  .choose__content {
-    margin-bottom: 30px;
-  }
-  .panel__list--active {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .panel__btn {
-    margin-top: 30px;
-  }
-  .panel__item {
-    margin-right: 10px;
-  }
-  .panel__item:nth-child(2) {
-    margin-right: 0;
-  }
-  .panel__item:nth-child(4) {
-    margin-right: 0;
-  }
-  .panel__item:nth-child(4) {
-    margin-right: 0;
-  }
-}
-@media only screen and (max-width: 823px) {
-  .choose {
-    padding-bottom: 100px;
-  }
-  .choose__content {
-    max-width: 321px;
-  }
-  .choose__title {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .choose__text {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .choose__filter-list {
-    margin-bottom: 14px;
-  }
-  .choose__filter-item {
-    padding: 14px 20px;
-  }
-  .choose__filter-item:not(:last-child) {
-    margin-right: 14px;
-  }
-  .choose__filter-link {
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .panel__list--active {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .panel__item-title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .panel__item-text {
-    font-size: 14px;
-    line-height: 17px;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .panel__item {
-    width: 100%;
-    max-width: 358px;
-    margin-right: 0;
-  }
-  .panel__item-img {
-    width: 100%;
-    max-width: 358px;
-  }
-}
-@media only screen and (max-width: 390px) {
-  .choose__filter-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .choose__filter-item:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .panel__item-infos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .panel__info-list:not(:last-child) {
-    margin-right: 0;
-  }
-
-}
 .site-footer__wrap {
   padding: 40px 0;
   display: -webkit-box;
@@ -1963,7 +1913,7 @@ button {
   line-height: 17px;
   font-weight: 500;
   text-align: left;
-  color: #555555;
+  color: var(--main-info-color);
 }
 .site-footer__faqs-link:hover {
   -webkit-text-decoration-line: underline;
@@ -2002,52 +1952,18 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.safe-wrapper__item {
-  position: relative;
-  width: 200px;
-  height: 160px;
-  margin: 0;
-  padding: 79px 15px 15px 15px;
-  background-color: var(--darkmodbtn-card-bg-color);
-  border-radius: 16px;
-}
-.safe-wrapper__item:nth-child(1)::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background-image: url("../../images/icons/cleaned-light.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 20px;
-  right: 20px;
-}
-.safe-wrapper__item:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-
 .site-footer__faqs-link--act {
   margin-bottom: 12px;
 }
 
 .site-footer__time {
+  color: var(--main-info-color);
   display: block;
 }
 .site-footer__time:not(:last-child) {
@@ -2080,6 +1996,7 @@ button {
 }
 
 .site-footer__socials-link {
+  color: var(--main-box-color);
   display: inline-block;
   text-decoration: none;
 }
@@ -2204,6 +2121,9 @@ button {
   .site-footer__socials {
     margin-top: 40px;
   }
+  .site-footer__faqs-about--social {
+    margin-bottom: 22px;
+  }
 }
 @media only screen and (max-width: 460px) {
   .site-footer__faqs {
@@ -2252,46 +2172,4 @@ button {
   .site-footer__contact-box {
     margin-bottom: 20px;
   }
-.safe-wrapper__item:nth-child(2)::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background-image: url("../../images/icons/heart-default.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 20px;
-  right: 20px;
-}
-.safe-wrapper__item:nth-child(3)::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background-image: url("../../images/icons/cdc-lock.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 20px;
-  right: 20px;
-}
-.safe-wrapper__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.safe-wrapper__every {
-  width: 170px;
-  margin: 0;
-}
-
-.safe-wrapper__text-every {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  text-align: left;
-  color: var(--main-text-color);
-  margin: 0;
-  padding: 0;
 }/*# sourceMappingURL=main.css.map */

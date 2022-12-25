@@ -77,7 +77,7 @@
 .site-footer__faqs-link {
     @include link-unstyle;
     @include typography-styles(normal, 14px, 17px, 500, left);
-    color: #555555;
+    color: var(--main-info-color);
 
     &:hover {
         text-decoration-line: underline;
@@ -111,6 +111,7 @@
 }
 
 .site-footer__time {
+    color: var(--main-info-color);
     display: block;
 
     &:not(:last-child) {
@@ -128,6 +129,7 @@
 }
 
 .site-footer__socials-link {
+    color: var(--main-box-color);
     @include link-unstyle;
 }
 
@@ -190,7 +192,7 @@
 
     }
 
-    .site-footer__main-links{
+    .site-footer__main-links {
         width: 100%;
         max-width: 850px;
     }
@@ -247,21 +249,24 @@
         margin-top: 40px;
     }
 
+    .site-footer__faqs-about--social{
+    margin-bottom: 22px;
+    }
 
 
 }
 
 @include desktop-first(460px) {
-    .site-footer__faqs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .site-footer__faqs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .site-footer__content-top {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 30px;
 
     }
@@ -276,20 +281,20 @@
     }
 
     .site-footer__info-box {
-text-align: center;
-
+        text-align: center;
         margin-bottom: 20px;
         margin-right: 0;
     }
 
 
     .site-footer__contacts {
-      justify-content: center;
-      align-items: center;
+        justify-content: center;
+        align-items: center;
     }
-    .site-footer__contact-box{
-    margin-bottom: 20px;
-  
-}
+
+    .site-footer__contact-box {
+        margin-bottom: 20px;
+
+    }
 
 }

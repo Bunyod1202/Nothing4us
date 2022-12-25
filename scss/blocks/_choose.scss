@@ -165,13 +165,13 @@
     background-color: var(--btn-bg-color);
     border-radius: 100px;
     border: transparent;
-    color: var(--main-box-color);
+    color: #fff;
 
     &:hover{
     background-color: #077743;;
     }
     &:active{
-        color: var(--main-text-color);
+        color: #000;
     background-color:  #F5F5F5;
     }
 }
