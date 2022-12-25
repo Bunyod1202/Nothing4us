@@ -1,0 +1,311 @@
+.site-header {
+  padding: 18px 0;
+  border-bottom: 1.5px solid #e5e7ea;
+}
+.header__inner {
+  @include flexbox(space-between, center, row);
+}
+.header-logo {
+  margin: 0;
+}
+.theme--active {
+  .moon {
+    display: none;
+
+  }
+  .sun {
+    display: block;
+  }
+}
+.moon {
+  display: block;
+  
+}
+.sun {
+  display: none;
+}
+.menu {
+  width: 100%;
+  // display: none
+}
+.menu-inner {
+  @include flexbox(space-between, center, row);
+}
+.header__start {
+  margin-right: auto;
+}
+.header__end {
+  @include flexbox(space-between, center, row);
+}
+.body--dark {
+ .nav-item {
+  &:not(:first-child) {
+    &::after {
+      background-image: url("../../images/icons/caret-down.svg");
+    }
+  }
+ }
+}
+.nav-list {
+  @include flexbox(space-between, center, row);
+  @include list-unstyle;
+  margin-left: 20px;
+  position: relative;
+}
+.nav-item {
+  padding: 18px 16px;
+  border-radius: 100px;
+  &:not(:first-child) {
+    display: flex;
+    align-items: center;
+    &::after {
+      margin-left: 8px;
+      @include psevdoelements(inline-block, 22px, 22px, "");
+      @include bgImages(center, no-repeat, cover);
+      background-image: url("../../images/icons/caret-down-dark.svg");
+    }
+  }
+  &:hover {
+    background-color: var(--darkmodbtn-card-bg-color);
+    &::after {
+      transform: rotate(180deg);
+    }
+    .nav-list__group,
+    .nav-list__group-help {
+      display: block;
+    }
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  @include typography-styles(normal, 18px, 22px, 500, center);
+}
+.nav-list__group {
+  display: none;
+  @include list-unstyle;
+  padding: 10px;
+  width: 147px;
+  position: absolute;
+  margin-left: -16px;
+  top: 100%;
+  background-color: var(--main-body-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.nav-list__group-help {
+  display: none;
+  @include list-unstyle;
+  padding: 10px;
+  width: 169px;
+  position: absolute;
+  margin-left: -16px;
+  top: 100%;
+  background-color: var(--main-body-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.nav-list__active-item {
+  padding: 18px 16px;
+  border-radius: 100px;
+  @include flexbox(start, center, row);
+  &:hover {
+    background-color: var(--darkmodbtn-card-bg-color);
+  }
+  &:active {
+    background-color: var(--btn-bg-color);
+    .nav-list__link {
+      color: var();
+    }
+  }
+}
+.nav-list__link {
+  @include typography-styles(normal, 18px, 22px, 500, left);
+  @include link-unstyle(inline-block);
+  color: var(--main-text-color);
+}
+.logo-inner {
+  display: none;
+}
+.header-phon-number {
+  @include typography-styles(normal, 18px, 22px, 600, left);
+  color: var(--main-text-color);
+  @include link-unstyle(inline-block);
+  margin-right: 24px;
+}
+.theme-btn {
+  border: none;
+  background-color: var(--darkmodbtn-card-bg-color);
+  border-radius: 50%;
+  padding: 18px;
+  margin-right: 16px;
+  svg path {
+    fill: var(--main-info-color);
+  }
+  &:hover {
+    svg path {
+      fill: var(--main-text-color);
+    }
+  }
+  &:active {
+    background-color: var(--btn-bg-color);
+    svg path {
+      fill: var(--main-box-color);
+    }
+  }
+}
+.login-btn {
+  padding: 18px 30px;
+  border: none;
+  background-color: var(--btn-bg-color);
+  border-radius: 100px;
+  @include typography-styles(normal, 18px, 22px, 500, left);
+  color: var(--main-box-color);
+  display: flex;
+  align-items: center;
+  &::after {
+    margin-left: 8px;
+    @include psevdoelements(inline-block, 22px, 22px, "");
+    @include bgImages(center, no-repeat, cover);
+    background-image: url("../../images/icons/login-light.svg");
+  }
+  &:hover {
+    background-color: var(--btn-bgdef-color);
+  }
+  &:active {
+    color: var(--main-text-color);
+    background-color: var(--darkmodbtn-card-bg-color);
+    &::after {
+      background-image: url("../../images/icons/login-dark.svg");
+    }
+  }
+}
+.phone-mobile {
+  display: none;
+}
+.menu-btn {
+  display: none;
+  border: none;
+  background-color: var(--main-body-color);
+  width: 40px;
+  height: 20px;
+  svg path {
+    stroke: var(--main-text-color);
+  }
+}
+@include desktop-first(1045px) {
+  .site-header {
+    padding: 24px 0;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .header--active {
+    position: relative;
+    .menu {
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: end;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu-inner {
+      max-width: 475px;
+      height: auto;
+      display: flex;
+      background-color: var(--main-body-color);
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 30px;
+    }
+    .header__end {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .nav-list {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 0;
+    }
+    .nav-item {
+      display: block;
+      background-color: transparent;
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 52px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .nav-list__group,
+    .nav-list__group-help {
+      margin: 20px 0 0 0;
+      padding: 0;
+      display: block;
+      position: static;
+      background-color: transparent;
+      box-shadow: 0 0 0 transparent;
+    }
+    .nav-list__active-item {
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    .nav-list__link {
+      color: var(--main-info-color);
+    }
+    .logo-inner {
+      max-width: 421px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 78px;
+    }
+    .btn-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      border: none;
+      padding: 18px;
+      background-color: var(--darkmodbtn-card-bg-color);
+      border-radius: 100px;
+      svg path{
+        fill:var(--main-text-color);
+      }
+    }
+  }
+}
+@include desktop-first(600px) {
+  .header--active {
+    .menu-inner {
+      width: 100%;
+    }
+    .logo-inner{
+      margin-bottom: 40px;
+    }
+    .nav-item {
+      &:not(:last-child){
+        margin-bottom: 32px;
+      }
+    }
+    .phone-mobile {
+      display: block;
+      margin-top: 32px;
+    }
+    .header__end {
+      justify-content: flex-end;
+    }
+    .phone-desktop { 
+      display: none;
+    }
+  }
+}
