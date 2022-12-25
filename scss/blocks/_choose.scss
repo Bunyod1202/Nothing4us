@@ -166,6 +166,14 @@
     border-radius: 100px;
     border: transparent;
     color: var(--main-box-color);
+
+    &:hover{
+    background-color: #077743;;
+    }
+    &:active{
+        color: var(--main-text-color);
+    background-color:  #F5F5F5;
+    }
 }
 
 .panel__info-item--seats::before {
@@ -274,7 +282,8 @@
 
 @include desktop-first(650px) {
     .panel__item {
-        width: 358px;
+        width: 100%;
+        max-width: 358px;
         margin-right: 0;
     }
 
@@ -284,7 +293,7 @@
     }
 }
 
-@include desktop-first(400px) {
+@include desktop-first(390px) {
     .choose__filter-list {
         @include flexbox(center, center, column)
     }
