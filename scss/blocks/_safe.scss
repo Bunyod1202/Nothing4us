@@ -1,0 +1,119 @@
+.safe {
+    padding-bottom: 160px;
+}
+
+.safe-wrapper {
+    background-color: var(--main-box-color);
+  background-image: url("../../images/car-rental.png");
+  background-position: calc(50% + 350px) calc(20% + 10px);
+  background-size: 400px, 452px;
+  background-repeat: no-repeat;
+  
+}
+
+.safe-wrapper__inner {
+    padding: 40px 32px 32px 32px;
+    border: 1.5px solid #E5E7EA;
+    border-radius: 20px;
+  
+}
+
+.safe-wrapper__rental {
+    max-width: 590px;
+    width: 100%;
+    margin-bottom: 90px;
+
+}
+
+.safe-wrapper__title {
+ @include typography-styles(normal,36px,44px,600,left);
+ color: var(--main-text-color);
+ margin: 0;
+ margin-bottom: 10px;
+
+}
+.safe-wrapper__text {
+@include typography-styles(normal,16px,24px,400,left);
+color: var(--main-info-color);
+margin: 0;
+
+}
+
+.safe-wrapper__list {
+    @include list-unstyle;
+    @include flexbox(start,start,row)
+}
+.safe-wrapper__item {
+    position: relative;
+    width: 200px;
+    height: 160px;
+    margin: 0;
+    padding: 79px 15px 15px 15px;
+    background-color: var(--darkmodbtn-card-bg-color);
+    border-radius: 16px;
+
+    &:nth-child(1)::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-image: url("../../images/icons/cleaned-light.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 20px;
+        right: 20px;
+    }
+
+    &:nth-child(2){
+        @include flexbox(end,flex-end,column);
+       
+    }
+
+    &:nth-child(2)::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-image: url("../../images/icons/heart-default.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    &:nth-child(3)::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-image: url("../../images/icons/cdc-lock.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+.safe-wrapper__every {
+    width: 170px;
+    margin: 0;
+
+}
+
+.safe-wrapper__text-every {
+    @include typography-styles(normal,16px,22px,500,left);
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+
+}
