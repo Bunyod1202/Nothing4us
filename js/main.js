@@ -20,8 +20,10 @@ elThemeBtn.addEventListener("click", () => {
     localStorage.setItem("theme", "body--dark")
   }
 })
+
 elBtnClose.addEventListener("click", () => { 
   elHeader.classList.remove("header--active")
+})
 
 var elTabItems = document.querySelectorAll(".choose__filter-item");
 var elTabLinks = document.querySelectorAll(".choose__filter-link");
@@ -45,3 +47,30 @@ elTabLinks.forEach(function(link){
   })
 
 })
+
+// carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass: true,
+  autoplay:true,
+autoplayTimeout:4000,
+  autoplayHoverPause: true,
+  loop:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      600:{
+          items:1,
+          nav:false
+      },
+      1000:{
+          items:1,
+          nav:true,
+         
+      }
+  }
+})
+// carousel
