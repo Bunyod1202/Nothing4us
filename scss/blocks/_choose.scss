@@ -167,12 +167,14 @@
     border: transparent;
     color: #fff;
 
-    &:hover{
-    background-color: #077743;;
+    &:hover {
+        background-color: #077743;
+        ;
     }
-    &:active{
+
+    &:active {
         color: #000;
-    background-color:  #F5F5F5;
+        background-color: #F5F5F5;
     }
 }
 
@@ -190,6 +192,26 @@
 
 .panel__info-item--petrol::before {
     background-image: url("../../images/icons/petrol-dark.svg");
+}
+
+
+.body--dark {
+    .panel__info-item--seats::before {
+        background-image: url("../../images/icons/seats-light.svg");
+    }
+
+    .panel__info-item--years::before {
+        background-image: url("../../images/icons/years-light.svg");
+    }
+
+    .panel__info-item--automatic::before {
+        background-image: url("../../images/icons/automatic-light.svg");
+    }
+
+    .panel__info-item--petrol::before {
+        background-image: url("../../images/icons/petrol-light.svg");
+    }
+
 }
 
 // Desktop media

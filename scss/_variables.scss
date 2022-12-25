@@ -1,46 +1,24 @@
 /* VARIABLES */
 :root {
-  --main-body-color: #ffffff;
-  --main-box-color: #ffffff;
-  --main-text-color: #000000;
-  --main-info-color: #555555;
-  --darkmodbtn-card-bg-color: #f5f5f5;
-  --border-color:#E5E7EA;
-  --btn-bg-color: #299764;
-  --btn-bgdef-color: #077743;
-  --border-color:#E5E7EA;
+    --main-body-color: #ffffff;
+    --main-box-color: #ffffff;
+    --main-text-color: #000000;
+    --main-info-color: #555555;
+    --darkmodbtn-card-bg-color: #f5f5f5;
+    --border-color: #E5E7EA;
+    --btn-bg-color: #299764;
+    --btn-bgdef-color: #077743;
+    --border-color: #E5E7EA;
 }
+
 .body--dark {
- --main-body-color: #1c1c1c;
-  --main-text-color: #ffffff;
-  --darkmodbtn-card-bg-color: #272727;
-  --btn-bg-color: #299764;
-  --border-color:#E5E7EA;
-  --main-info-color: #fff;
-  --main-box-color: #000;
-
-  .panel__info-item--seats::before {
-    background-image: url("../../images/icons/seats-light.svg");
-}
-
-.panel__info-item--years::before {
-    background-image: url("../../images/icons/years-light.svg");
-}
-
-.panel__info-item--automatic::before {
-    background-image: url("../../images/icons/automatic-light.svg");
-}
-
-.panel__info-item--petrol::before {
-    background-image: url("../../images/icons/petrol-light.svg");
-}
-
-
-
-
-
+    --main-body-color: #1c1c1c;
+    --main-text-color: #ffffff;
+    --darkmodbtn-card-bg-color: #272727;
+    --btn-bg-color: #299764;
+    --border-color: #E5E7EA;
+    --main-info-color: #fff;
+    --main-box-color: #000;
 
 
 }
-
-
