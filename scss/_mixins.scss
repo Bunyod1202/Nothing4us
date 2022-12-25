@@ -67,7 +67,9 @@
   }
 }
 
+
 @mixin typography-styles($style:normal, $size:16px, $line-height:1.15,$weight:400, $text-align:left) {
+
   font-style: $style;
   font-size: $size;
   line-height: $line-height;
