@@ -49,7 +49,7 @@ elTabLinks.forEach(function(link){
 })
 
 // carousel
-$('.owl-carousel').owlCarousel({
+$('.hero-owl-carousel').owlCarousel({
   loop:true,
   margin:10,
   responsiveClass: true,
@@ -68,6 +68,30 @@ autoplayTimeout:4000,
       },
       1000:{
           items:1,
+          nav:true,
+         
+      }
+  }
+})
+$('.community-owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass: true,
+  // autoplay:true,
+// autoplayTimeout:4000,
+  // autoplayHoverPause: true,
+  loop:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      600:{
+          items:1.5,
+          nav:false
+      },
+      1000:{
+          items:1.5,
           nav:true,
          
       }
