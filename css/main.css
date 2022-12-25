@@ -7,6 +7,7 @@
   --btn-bg-color: #299764;
   --main-box-color: #ffffff;
   --border-color:#E5E7EA;
+  --wrong-color:#FF3B30;
 }
 
 .dark {
@@ -462,7 +463,8 @@ img {
 }
 
 .service-service__title-wrap {
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: center;
@@ -523,6 +525,16 @@ img {
 .service-list__item:nth-child(2) {
   margin-bottom: 20px;
 }
+.service-list__item:nth-child(1):after {
+  position: absolute;
+  background-image: url("../images/icons/book-online-icon.svg");
+  background-size: cover;
+  background-position: center;
+  right: 40px;
+  top: 40px;
+  width: 60px;
+  height: 60px;
+}
 .service-list__item:nth-child(2):after {
   content: "";
   position: absolute;
@@ -557,18 +569,6 @@ img {
   height: 60px;
 }
 
-.service-list__item::after {
-  content: "";
-  position: absolute;
-  background-image: url("../images/icons/book-online-icon.svg");
-  background-size: cover;
-  background-position: center;
-  right: 40px;
-  top: 40px;
-  width: 60px;
-  height: 60px;
-}
-
 .service-list__inf {
   width: 211px;
   padding-bottom: 10px;
@@ -585,7 +585,8 @@ img {
 }
 
 .service-list__in {
-  width: 354px;
+  width: 100%;
+  max-width: 354px;
 }
 
 .service-list__complet {
@@ -613,13 +614,197 @@ img {
   padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 1260px) {
+  .service {
+    padding: 120px 0;
+  }
+  .service-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .service-wrapper__list {
+    padding-bottom: 120px;
+    overflow: auto;
+  }
+  .service-wrapper__list::-webkit-scrollbar {
+    display: none;
+  }
+  .service-wrapper__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .service-service__title-wrap {
+    margin-bottom: 30px;
+  }
+  .service-list__item {
+    width: 100%;
+    max-width: 387px;
+    padding: 30px 24px;
+    background-color: var(--darkmodbtn-card-bg-color);
+    border-radius: 20px;
+  }
+  .service-list__item:nth-child(1) {
+    margin-right: 20px;
+  }
+  .service-list__item:nth-child(3) {
+    margin-right: 20px;
+  }
+  .service-list__item:nth-child(1):after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/book-online-icon.svg");
+    background-size: cover;
+    background-position: center;
+    right: 30px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .service-list__item:nth-child(2):after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/guaranted-icon.svg");
+    background-size: cover;
+    background-position: center;
+    right: 30px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .service-list__item:nth-child(3):after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/user-clock-default.svg");
+    background-size: cover;
+    background-position: center;
+    right: 30px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .service-list__item:nth-child(4):after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/noreservation-icon.svg");
+    background-size: cover;
+    background-position: center;
+    right: 30px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .service-list__inf {
+    width: 185px;
+  }
+  .service-list__book {
+    font-style: normal;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .service-list__in {
+    max-width: 384px;
+  }
+  .service-list__complet {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .service-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .service-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .service-list__item:nth-child(1) {
+    margin-right: 0px !important;
+  }
+  .service-list__item:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .service {
+    padding: 100px 0;
+  }
+  .service-wrapper__list {
+    padding-bottom: 100px;
+  }
+  .service-wrapper__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .service-wrapper__title {
+    width: 341px;
+    padding-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .service-wrapper__title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .service-wrapper__text {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .service-service__text {
+    padding-bottom: 6px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .service-service__parag {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
 .safe {
   padding-bottom: 160px;
 }
 
 .safe-wrapper {
   background-color: var(--main-box-color);
-  background-image: url("../../images/car-rental.png");
+  background-image: url("../images/car-rental.png");
   background-position: calc(50% + 350px) calc(20% + 10px);
   background-size: 400px, 452px;
   background-repeat: no-repeat;
@@ -679,7 +864,8 @@ img {
 
 .safe-wrapper__item {
   position: relative;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 160px;
   margin: 0;
   padding: 79px 15px 15px 15px;
@@ -691,14 +877,44 @@ img {
   width: 30px;
   height: 30px;
   position: absolute;
-  background-image: url("../../images/icons/cleaned-light.svg");
+  background-image: url("../images/icons/cleaned-light.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   top: 20px;
   right: 20px;
 }
+.safe-wrapper__item:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .safe-wrapper__item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.safe-wrapper__item:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,4 +971,424 @@ img {
   color: var(--main-text-color);
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 1260px) {
+  .safe {
+    padding-bottom: 120px;
+  }
+  .safe-wrapper {
+    background-image: url("../images/car-rental.png");
+    background-position: calc(50% + 390px) calc(91% + 10px);
+    background-size: 284px, 370px;
+    background-repeat: no-repeat;
+  }
+  .safe-wrapper__inner {
+    padding: 30px 10px 30px 24px;
+  }
+  .safe-wrapper__rental {
+    max-width: 467px;
+    width: 100%;
+    margin-bottom: 90px;
+  }
+  .safe-wrapper__title {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--main-text-color);
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .safe-wrapper__item {
+    position: relative;
+    width: 100%;
+    max-width: 140px;
+    height: 160px;
+    padding: 69px 10px 10px 10px;
+  }
+  .safe-wrapper__every {
+    width: 100%;
+    max-width: 170px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .safe {
+    padding-bottom: 120px;
+  }
+  .safe-wrapper {
+    background-image: url("../images/car-rental.png");
+    background-position: calc(50% + 300px) calc(91% + 10px);
+    background-size: 284px, 370px;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .safe {
+    padding-bottom: 100px;
+  }
+  .safe-wrapper {
+    background-image: url("../../images/green-border.png");
+    background-position: right top;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+  .safe-wrapper__inner {
+    padding: 24px 20px 24px 20px;
+  }
+  .safe-wrapper__title-wrap {
+    width: 100%;
+    max-width: 300px;
+  }
+  .safe-wrapper__rental {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .safe-wrapper__title-wrap {
+    max-width: 183px;
+    width: 100%;
+  }
+  .safe-wrapper__title {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--main-text-color);
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  .safe-wrapper__text {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--main-info-color);
+    margin: 0;
+  }
+  .safe-wrapper__list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: block;
+        -ms-flex-pack: block;
+            justify-content: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .safe-wrapper__item {
+    width: 100%;
+    max-width: 320px;
+    height: 110px;
+    padding: 65px 14px 14px 10px;
+    margin-bottom: 10px;
+  }
+  .safe-wrapper__item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .safe-wrapper__every {
+    width: 100%;
+    max-width: 300px;
+  }
+  .safe-wrapper__text-every {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .safe {
+    padding-bottom: 100px;
+  }
+  .safe-wrapper {
+    background-image: url("../../images/green-border.png");
+    background-size: 120px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .safe {
+    padding-bottom: 100px;
+  }
+  .safe-wrapper {
+    background-image: url("../../images/green-border.png");
+    background-size: 80px;
+  }
+}
+.login {
+  position: fixed;
+  display: none;
+  right: 0;
+  left: 0;
+  top: 208px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background-color: var(--main-box-color);
+  -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.login-wrapper {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  padding: 25px;
+  background-color: var(--darkmodbtn-card-bg-color);
+  border: none;
+  border-radius: 100px;
+  background-image: url("../../images/icons/eye-dark.svg");
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.login-wrapper__title {
+  padding-bottom: 32px;
+}
+
+.login-wrapper__text {
+  margin: 0;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--main-text-color);
+  padding-bottom: 10px;
+}
+
+.login-wrapper__span {
+  margin: 0;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--main-info-color);
+}
+
+.form-input {
+  display: block;
+}
+
+.label-input {
+  margin-bottom: 16px;
+}
+
+.input-email {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 30px;
+  background-color: var(--main-box-color);
+  border: 1.5px solid #E5E7EA;
+  border-radius: 82px;
+  outline: none;
+}
+
+.input-email:not(:-moz-placeholder-shown):not(:focus):invalid {
+  border: 1.5px solid red;
+}
+
+.input-email:not(:-ms-input-placeholder):not(:focus):invalid {
+  border: 1.5px solid red;
+}
+
+.input-email:not(:placeholder-shown):not(:focus):invalid {
+  border: 1.5px solid red;
+}
+
+.input-email:not(:-moz-placeholder-shown):not(:focus):invalid + .wrong {
+  opacity: 1;
+}
+
+.input-email:not(:-ms-input-placeholder):not(:focus):invalid + .wrong {
+  opacity: 1;
+}
+
+.input-email:not(:placeholder-shown):not(:focus):invalid + .wrong {
+  opacity: 1;
+}
+
+.input-email:not(:-moz-placeholder-shown):not(:focus):valid {
+  border: 1.5px solid var(--btn-bg-color);
+}
+
+.input-password {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 30px;
+  background-color: var(--main-box-color);
+  border: 1.5px solid #E5E7EA;
+  border-radius: 82px;
+  outline: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.input-password:not(:-moz-placeholder-shown):not(:focus):invalid {
+  border: 1.5px solid red;
+}
+
+.input-password:not(:-ms-input-placeholder):not(:focus):invalid {
+  border: 1.5px solid red;
+}
+
+.input-password:not(:placeholder-shown):not(:focus):invalid {
+  border: 1.5px solid red;
+}
+
+.input-password:not(:-moz-placeholder-shown):not(:focus):invalid + .wrongs {
+  opacity: 1;
+}
+
+.input-password:not(:-ms-input-placeholder):not(:focus):invalid + .wrongs {
+  opacity: 1;
+}
+
+.input-password:not(:placeholder-shown):not(:focus):invalid + .wrongs {
+  opacity: 1;
+}
+
+.wrong {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: left;
+  color: var(--wrong-color);
+  opacity: 0;
+}
+
+.wrongs {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: left;
+  color: var(--wrong-color);
+  opacity: 0;
+  display: block;
+}
+
+.input-password:not(:-moz-placeholder-shown):not(:focus):valid {
+  border: 1.5px solid var(--btn-bg-color);
+}
+
+.forgot {
+  text-align: end;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: right;
+  color: var(--main-info-color);
+  text-decoration: none;
+  display: block;
+}
+
+.warning-wrap {
+  margin: 26px 0 32px 0;
+}
+
+.warning {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.btn-login-modal {
+  position: relative;
+  width: 100%;
+  max-width: 526px;
+  background-color: var(--btn-bg-color);
+  border: none;
+  border-radius: 100px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--main-box-color);
+  padding: 18px 0;
+}
+.btn-login-modal::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/eye-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+}
+
+@media only screen and (max-width: 835px) {
+  .login {
+    padding: 50px 16px 16px 16px;
+    top: 200px;
+  }
+  .login-wrapper__text {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--main-text-color);
+    padding-bottom: 6px;
+  }
+  .login-wrapper__span {
+    margin: 0;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-info-color);
+  }
+  .login-wrapper__title {
+    padding-bottom: 40px;
+  }
+  .forgot {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

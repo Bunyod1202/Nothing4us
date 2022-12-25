@@ -70,11 +70,12 @@
 				<div class="service-service">
 				  <div class="service-service__title-wrap">
 					<h2 class="service-service__text">Unparalleled service</h2>
-					<p class="service-service__parag">Whether you are looking for Newark Airport car rental, an insurance replacement vehicle 
+					<p class="service-service__parag">Whether you are looking for Newark Airport car rental, an insurance replacement 
+						  vehicle 
 					   or minivan to take on vacation Car rental has it all.</p>
 				  </div>
 				</div>
-				<ul class="service-list">
+				 <ul class="service-list">
 				  <li class="service-list__item">
 					<div class="service-list__inf">
 						<h3 class="service-list__book">Book online, pay online</h3>
@@ -107,7 +108,7 @@
 					 <p class="service-list__complet">No cancellation fees if cancelled 24 hours prior to booking time</p>
 					</div>
 				  </li>
-				</ul>
+				</ul> 
 			  </div>
 			</div>
 	</section>
@@ -117,17 +118,19 @@
 			<div class="safe-wrapper">
 				<div class="safe-wrapper__inner">
 					<div class="safe-wrapper__rental">
-						<h2 class="safe-wrapper__title">Car rental keeps you safe</h2>
+						<div class="safe-wrapper__title-wrap">
+							<h2 class="safe-wrapper__title">Car rental keeps you safe</h2>
+						</div>
 						<p class="safe-wrapper__text">The safety of our employees and renters is our number one priority. In addition to being confident your vehicle is 
 									cleaned and sanitized every time you rent, you can also feel confident that we will take every opportunity to enhance the health and 
 									 safety measures currently practiced in our operations.</p>
 					</div>
 					<ul class="safe-wrapper__list">
 						<li class="safe-wrapper__item">
-						 <div class="safe-wrapper__every">
-							<p class="safe-wrapper__text-every">Every car is thoroughly sanitized and cleaned</p>
-						 </div>
-						</li>
+							<div class="safe-wrapper__every">
+							   <p class="safe-wrapper__text-every">Every car is thoroughly sanitized and cleaned</p>
+							</div>
+						   </li>
 						<li class="safe-wrapper__item">
 							<div class="safe-wrapper__every">
 							   <p class="safe-wrapper__text-every">All of our employees wear masks</p>
@@ -143,12 +146,42 @@
 			
 			</div>
 		</div>
-	</section> 
+	</section>  
 
   </main>
   <footer class="site-footer">
 
   </footer>
+
+  <div class="login">
+	<div class="login-wrapper">
+		<div class="login-wrapper__title">
+			<p class="login-wrapper__text">Login <br>
+			<span class="login-wrapper__span">Use the email and password that you login</span>
+			</p>
+		<button class="close-btn" type="button"></button>
+			
+		</div>
+		<form action="https://echo.htmlacademy.ru/courses" class="form-input" method="post" autocomplete="off">
+			<label class="label-input">
+				<input type="email" class="input-email" name="email" placeholder="Email" required>
+				<span class="wrong">Entered the wrong email
+				</span>
+			</label>
+			<label class="password-input">
+				<input type="password" class="input-password" name="password" placeholder="Password" minlength="6" required>
+				<span class="wrongs">Entered the wrong password
+				</span>
+				<img class="eye" src="./images/icons/eye-dark.svg" width="22" height="22" alt="eye">
+			</label>
+				<a href="#" class="forgot">Forgot password</a>
+			<div class="warning-wrap">
+		   <p class="warning">I want to create an account</p>
+			</div>
+			<button class="btn-login-modal" type="submit">Login &nbsp;</button>
+		</form>
+	</div>
+  </div>
   <script src="./js/main.js"></script>
 </body>
 
