@@ -18,7 +18,6 @@
   --btn-bg-color: #299764;
   --border-color: #E5E7EA;
   --main-info-color: #fff;
-  --main-box-color: #000;
 }
 
 /* MIXINS */ /**
@@ -1064,6 +1063,10 @@ button {
   background-image: url("../../images/icons/search-dark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.owl-carousel {
+  display: block;
 }
 
 .choose {
@@ -2909,7 +2912,6 @@ button {
   padding: 18px 50px;
   border: 1.5px solid;
   border-radius: 100px;
-  border-image-source: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #f9ed32 0%, #ee2a7b 36%, #d22a8a 44%, #8b2ab2 60%, #1b2af0 83%, #002aff 88%);
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
