@@ -14,14 +14,25 @@
     color: var(--main-text-color);
 
 }
+.logo-group{
+    overflow: hidden;
+}
 
-
-.service-wrapper__list{
+.service-wrapper__list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    
+}
+.logo-group {
     padding-bottom: 160px;
     @include list-unstyle;
   @include flexbox(start,center,row)
 }
-
+.logo-group {
+width: 100%;
+overflow: auto;
+}
 .service-wrapper__item:not(:last-child) {
     margin-right: 66px;
 }
@@ -60,7 +71,33 @@
     padding: 40px;
     background-color: var(--darkmodbtn-card-bg-color);
     border-radius: 20px;
+    &:hover{
+        background-color:var(--btn-bg-color);
+        .service-list__book{
+            color: #fff;
+        }
+        .service-list__complet{
+            
+            color: #fff;
+         
+        }
+        &:nth-child(1):after{
+            background-image: url("../../images/icons/book-online-icon\ copy.svg");
+          
+        }
+        &:nth-child(3):after{
+            background-image: url("../../images/icons/user-clock-hover.svg");
+          
+        }
+        &:nth-child(2):after{
 
+            background-image: url("../../images/icons/guaranted-icon\ copy.svg");
+
+        }
+        &:nth-child(4):after{
+            background-image: url("../../images/icons/noreservation-icon\ copy.svg");
+        }
+    }
  &:nth-child(1) {
         margin-bottom: 20px;
     }
@@ -181,9 +218,9 @@ padding-bottom: 10px;
 
 
     .service-wrapper__list{
-        padding-bottom: 120px;
-        overflow: hidden;
-
+     
+        
+   
 
        &::-webkit-scrollbar {
         display: none;
@@ -320,9 +357,12 @@ padding-bottom: 10px;
     .service {
         padding: 100px 0;
     }
-    .service-wrapper__list{
+    .logo-group {
+
         padding-bottom: 100px;
-   
+    }
+    .service-wrapper__list{
+        width: 600px;
     }
 
     .service-wrapper__item:not(:last-child) {

@@ -1,9 +1,5 @@
 .login {
-    position: fixed;
-    display: none;
-    right: 0;
-    left: 0;
-    top: 208px;
+    display: block;
     width: 100%;
     max-width: 590px;
     margin: 0 auto;
@@ -11,13 +7,30 @@
     background-color: var(--main-box-color);
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
 border-radius: 20px;
+z-index: 9;
 }
 
 .login-wrapper {
     position: relative;
 
 }
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    background-color:#00000073; 
 
+}
+.modal--active {
+    display: flex ;
+    background-color:rgba(0, 0, 0, 0.452); 
+}
 .close-btn {
     position: absolute;
     top: 0;
@@ -28,7 +41,7 @@ border-radius: 20px;
     background-color: var(--darkmodbtn-card-bg-color);
     border: none;
     border-radius: 100px;
-    background-image: url("../../images/icons/eye-dark.svg");
+    background-image: url("../../images/icons/cross-dark.svg");
     background-size: 22px;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +184,7 @@ opacity: 0;
     &::after{
         content: "";
         position: absolute;
-        background-image: url("../../images/icons/eye-dark.svg");
+        background-image: url("../../images/icons/login-light.svg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 22px;

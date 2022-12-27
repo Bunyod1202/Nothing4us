@@ -1482,7 +1482,19 @@ button {
   color: var(--main-text-color);
 }
 
+.logo-group {
+  overflow: hidden;
+}
+
 .service-wrapper__list {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.logo-group {
   padding-bottom: 160px;
   margin: 0;
   padding-left: 0;
@@ -1500,6 +1512,11 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.logo-group {
+  width: 100%;
+  overflow: auto;
 }
 
 .service-wrapper__item:not(:last-child) {
@@ -1562,6 +1579,27 @@ button {
   padding: 40px;
   background-color: var(--darkmodbtn-card-bg-color);
   border-radius: 20px;
+}
+.service-list__item:hover {
+  background-color: var(--btn-bg-color);
+}
+.service-list__item:hover .service-list__book {
+  color: #fff;
+}
+.service-list__item:hover .service-list__complet {
+  color: #fff;
+}
+.service-list__item:hover:nth-child(1):after {
+  background-image: url("../../images/icons/book-online-icon copy.svg");
+}
+.service-list__item:hover:nth-child(3):after {
+  background-image: url("../../images/icons/user-clock-hover.svg");
+}
+.service-list__item:hover:nth-child(2):after {
+  background-image: url("../../images/icons/guaranted-icon copy.svg");
+}
+.service-list__item:hover:nth-child(4):after {
+  background-image: url("../../images/icons/noreservation-icon copy.svg");
 }
 .service-list__item:nth-child(1) {
   margin-bottom: 20px;
@@ -1677,10 +1715,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .service-wrapper__list {
-    padding-bottom: 120px;
-    overflow: hidden;
   }
   .service-wrapper__list::-webkit-scrollbar {
     display: none;
@@ -1804,8 +1838,11 @@ button {
   .service {
     padding: 100px 0;
   }
-  .service-wrapper__list {
+  .logo-group {
     padding-bottom: 100px;
+  }
+  .service-wrapper__list {
+    width: 600px;
   }
   .service-wrapper__item:not(:last-child) {
     margin-right: 20px;
@@ -1935,6 +1972,22 @@ button {
   padding: 79px 15px 15px 15px;
   background-color: var(--darkmodbtn-card-bg-color);
   border-radius: 16px;
+}
+.safe-wrapper__item:hover {
+  background-color: var(--btn-bg-color);
+}
+.safe-wrapper__item:hover .safe-wrapper__text-every {
+  color: #fff;
+}
+.safe-wrapper__item:hover:nth-child(1)::after {
+  background-image: url("../../images/icons/every-icon.svg");
+}
+.safe-wrapper__item:hover:nth-child(2)::after {
+  content: "";
+  background-image: url("../../images/icons/heart-hover.svg");
+}
+.safe-wrapper__item:hover:nth-child(3)::after {
+  background-image: url("../../images/icons/westay-icon.svg");
 }
 .safe-wrapper__item:nth-child(1)::after {
   content: "";
@@ -2573,11 +2626,7 @@ button {
   }
 }
 .login {
-  position: fixed;
-  display: none;
-  right: 0;
-  left: 0;
-  top: 208px;
+  display: block;
   width: 100%;
   max-width: 590px;
   margin: 0 auto;
@@ -2586,10 +2635,35 @@ button {
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  z-index: 9;
 }
 
 .login-wrapper {
   position: relative;
+}
+
+.modal {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.4509803922);
+}
+
+.modal--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.452);
 }
 
 .close-btn {
@@ -2602,7 +2676,7 @@ button {
   background-color: var(--darkmodbtn-card-bg-color);
   border: none;
   border-radius: 100px;
-  background-image: url("../../images/icons/eye-dark.svg");
+  background-image: url("../../images/icons/cross-dark.svg");
   background-size: 22px;
   background-position: center;
   background-repeat: no-repeat;
@@ -2796,7 +2870,7 @@ button {
 .btn-login-modal::after {
   content: "";
   position: absolute;
-  background-image: url("../../images/icons/eye-dark.svg");
+  background-image: url("../../images/icons/login-light.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 22px;

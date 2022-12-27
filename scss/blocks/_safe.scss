@@ -56,7 +56,22 @@ margin: 0;
     padding: 79px 15px 15px 15px;
     background-color: var(--darkmodbtn-card-bg-color);
     border-radius: 16px;
-
+    &:hover {
+        background-color: var(--btn-bg-color);
+        .safe-wrapper__text-every {
+            color: #fff;
+        }
+        &:nth-child(1)::after {
+            background-image: url("../../images/icons/every-icon.svg");
+        }
+        &:nth-child(2)::after {
+            content: "";
+            background-image: url("../../images/icons/heart-hover.svg");
+        }
+        &:nth-child(3)::after {
+            background-image: url("../../images/icons/westay-icon.svg");
+        }
+    }
     &:nth-child(1)::after {
         content: "";
         width: 30px;

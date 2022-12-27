@@ -3,6 +3,9 @@
 
 
 const elThemeBtn = document.querySelector(".theme-btn")
+const elLoginBtn = document.querySelector(".login-btn")
+const elLogin = document.querySelector(".modal")
+const elCloseBtn = document.querySelector(".close-btn")
 const elBody = document.querySelector(".site-body")
 const elMenuBtn = document.querySelector(".menu-btn")
 const elBtnClose = document.querySelector(".btn-close")
@@ -27,6 +30,12 @@ elThemeBtn.addEventListener("click", () => {
 elBtnClose.addEventListener("click", () => { 
   elHeader.classList.remove("header--active")
 })
+elLoginBtn.addEventListener("click", () => { 
+  elLogin.classList.add("modal--active")
+})
+elCloseBtn.addEventListener("click", () => { 
+  elLogin.classList.remove("modal--active")
+})
 
 var elTabItems = document.querySelectorAll(".choose__filter-item");
 var elTabLinks = document.querySelectorAll(".choose__filter-link");
@@ -50,6 +59,8 @@ elTabLinks.forEach(function(link){
   })
 
 })
+
+
 
 // carousel
 $('.hero-owl-carousel').owlCarousel({
