@@ -47,6 +47,20 @@ margin: 0;
     @include list-unstyle;
     @include flexbox(start,start,row)
 }
+.body--dark {
+    .safe-wrapper__item {
+        &:nth-child(1)::after {
+            background-image: url("../../images/icons/every-icon.svg");
+        }
+        &:nth-child(2)::after {
+            content: "";
+            background-image: url("../../images/icons/heart-hover.svg");
+        }
+        &:nth-child(3)::after {
+            background-image: url("../../images/icons/westay-icon.svg");
+        }
+    }
+}
 .safe-wrapper__item {
     position: relative;
     width: 100%;

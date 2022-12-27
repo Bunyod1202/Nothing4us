@@ -1961,6 +1961,17 @@ button {
           flex-direction: row;
 }
 
+.body--dark .safe-wrapper__item:nth-child(1)::after {
+  background-image: url("../../images/icons/every-icon.svg");
+}
+.body--dark .safe-wrapper__item:nth-child(2)::after {
+  content: "";
+  background-image: url("../../images/icons/heart-hover.svg");
+}
+.body--dark .safe-wrapper__item:nth-child(3)::after {
+  background-image: url("../../images/icons/westay-icon.svg");
+}
+
 .safe-wrapper__item {
   position: relative;
   width: 100%;
