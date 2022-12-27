@@ -1884,7 +1884,6 @@ button {
   display: none;
 }
 .body--dark .dark-img {
-  margin-top: -40px;
   display: block;
 }
 
@@ -1893,7 +1892,6 @@ button {
 }
 
 .dark-img {
-  margin-top: -40px;
   display: none;
 }
 
@@ -2445,6 +2443,10 @@ button {
   margin: 0;
   padding-left: 0;
   list-style: none;
+}
+
+.body--dark .site-footer__socials-link svg path {
+  fill: #000;
 }
 
 .site-footer__socials-link {

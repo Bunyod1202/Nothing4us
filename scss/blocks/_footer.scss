@@ -127,6 +127,14 @@
     display: flex;
     @include list-unstyle;
 }
+.body--dark {
+    .site-footer__socials-link{
+        svg path {
+            fill: #000;
+        }
+    }
+
+}
 
 .site-footer__socials-link {
     color: var(--main-box-color);
